@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.steps,
+.counters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 1em;
+}
+
+p {
+  margin-inline: 1em;
+}
+
+button {
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.3em 0.6em;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.buttons {
+  margin-top: 1em;
+}
+.dateCounter {
+  text-align: center;
+}
+.reset {
+  margin-top: 1em;
+}
+
+.counters input {
+  margin-inline: 0.5em;
+  padding: 0.3em;
+}

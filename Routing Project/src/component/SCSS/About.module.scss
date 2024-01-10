@@ -1,0 +1,47 @@
+.aboutContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 2em 2em 2em;
+  gap: 5em;
+  height: 100%;
+}
+
+.aboutContainer img {
+  border-radius: 2rem;
+  outline: 2px solid #fff;
+  outline-width: 0.3em;
+  outline-offset: 5px;
+  padding: 0.5em;
+  margin-block: 2em;
+}
+.aboutText {
+  background-color: #343a40;
+  color: #fff;
+  letter-spacing: 0.5px;
+  outline: 2px solid #343a40;
+  outline-width: 0.3em;
+  outline-offset: 5px;
+  border-radius: 2rem;
+  padding: 2em;
+  margin-block: 2em;
+}
+.aboutText h1 {
+  font-size: 5rem;
+  margin-bottom: 0.5em;
+}
+.aboutText p {
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 350px) and (max-width: 760px) {
+  html {
+    font-size: 58%;
+  }
+  .aboutContainer {
+    gap: 1em;
+  }
+}

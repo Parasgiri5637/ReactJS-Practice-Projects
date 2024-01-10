@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.bill,
+.tip {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+.display,
+button {
+  margin-top: 1em;
+}
+button {
+  padding: 0.5em 2em;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+select,
+input {
+  font-size: 0.9rem;
+  padding: 0.3em;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 2rem;
+}

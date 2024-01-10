@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; //* 10px
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(33, 37, 41, 0.85);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff214f;
+  border-radius: 2rem;
+}

@@ -1,0 +1,123 @@
+.cartData {
+  width: 80%;
+  margin-inline: auto;
+  h2 {
+    color: #ff214f;
+  }
+  p {
+    color: #fff;
+  }
+}
+
+.itemsCart {
+  margin-top: 0.2em;
+  background-color: #fff;
+  overflow-y: scroll;
+  height: 35rem;
+  border-radius: 2rem;
+  padding: 2em;
+
+  .itemList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    border-bottom: 1px solid rgb(146, 134, 134);
+    padding-bottom: 0.5em;
+    margin-top: 0.3em;
+    justify-content: space-between;
+  }
+  img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin-right: 8em;
+  }
+  .item1,
+  .item2 {
+    display: flex;
+    align-items: center;
+  }
+  .item2 {
+    justify-content: space-between;
+  }
+  .itemName {
+    color: #ff214f;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .qunatityBtn {
+    display: flex;
+    align-items: center;
+
+    button {
+      background-color: #ff214f;
+      padding: 0.2em 0.5em;
+      border: none;
+      outline: none;
+      border-radius: 2rem;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      &:active {
+        transform: scale(0.96);
+      }
+    }
+    p {
+      color: #ff214f;
+      font-size: 2rem;
+      padding-inline: 1em;
+    }
+  }
+  .itemPrice {
+    color: #ff214f;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+}
+.checkOut {
+  text-align: end;
+  margin-right: 0.5em;
+  margin-top: 0.3em;
+
+  small {
+    color: #ffff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  button:not(:last-child) {
+    margin-right: 2em;
+  }
+  button {
+    background-color: #ff214f;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 2rem;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+}
+
+@media (min-width: 350px) {
+  .item2 {
+    margin-top: 1em;
+  }
+  .itemList {
+    img {
+      margin-right: 4em;
+    }
+  }
+}
+@media (min-width: 587px) {
+  .item2 {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,44 @@
+.blogContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    color: #ffff;
+  }
+}
+
+.blogBtn button {
+  background-color: transparent;
+  border: 1px solid #ff214f;
+  outline: none;
+  padding: 0.5em 1em;
+  color: #ffff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  &:focus.active {
+    background-color: #ff214f;
+    transition: all 300ms ease-in-out;
+  }
+}
+a:global(.active) {
+  background-color: var(--color-dark--0);
+}
+.foodContainner {
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  text-align: center;
+  gap: 2em;
+  margin-inline: 1em;
+  margin-bottom: 1.5em;
+
+  @media (min-width: 450px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}

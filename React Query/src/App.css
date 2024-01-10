@@ -1,0 +1,6 @@
+.heroCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1em;
+  margin-inline: 1em;
+}

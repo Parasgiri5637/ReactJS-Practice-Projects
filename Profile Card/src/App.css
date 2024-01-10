@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #28223f;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  outline: none;
+  border: none;
+}
+li {
+  list-style: none;
+}
+.profile-card {
+  background-color: #231e39;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  width: 40rem;
+  max-width: 100%;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .profile-card {
+    width: 30rem;
+    margin-inline: 1em;
+  }
+}
+.card-detail {
+  padding: 2em;
+}
+img {
+  width: 15rem;
+  border-radius: 10rem;
+  outline: 2px solid #03bfcb;
+  padding: 0.5em;
+  transition: all 300ms ease-in;
+}
+img:hover {
+  transform: scale(0.9);
+}
+.name {
+  font-size: 2rem;
+  margin-block: 0.5em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.city {
+  font-size: 1.5rem;
+  font-weight: 520;
+  letter-spacing: 1px;
+}
+.job-status {
+  font-size: 1.5rem;
+  margin-block: 0.8em 0.5em;
+  letter-spacing: 1px;
+}
+.instruction {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.8em;
+}
+.mailbtn,
+.watchBtn {
+  font-size: 1.5rem;
+  padding: 0.5em 2.5em;
+  border-radius: 0.3rem;
+  margin-bottom: 1em;
+  color: #231e39;
+  cursor: pointer;
+}
+.mailbtn {
+  margin-right: 0.5em;
+  background-color: #03bfcb;
+  border: 1px solid #03bfcb;
+}
+.watchBtn {
+  background-color: transparent;
+  color: #02899c;
+  border: 1px solid #02899c;
+}
+.skill {
+  border-top: 1px solid #02899c;
+  border-radius: 0 0 2rem 2rem;
+  background-color: #1f1a36;
+  text-align: left;
+  padding: 1em 1.5em;
+}
+.skill-text {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.skills-sets ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  align-items: center;
+  gap: 1em;
+  margin-top: 0.5em;
+}
+
+ul li {
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border: 1px solid #2d2747;
+  border-radius: 0.2rem;
+  padding: 0.7em;
+  font-weight: 500;
+}
