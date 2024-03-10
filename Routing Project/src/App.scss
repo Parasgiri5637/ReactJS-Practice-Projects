@@ -1,0 +1,15 @@
+.container {
+  background-image: url("/public/main.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100dvh;
+  .overlay {
+    min-height: 100dvh;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.85);
+  }
+}
+ul li a.active {
+  color: #ff214f;
+}

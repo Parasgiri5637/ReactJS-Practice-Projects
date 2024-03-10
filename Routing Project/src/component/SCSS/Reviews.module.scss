@@ -1,0 +1,30 @@
+@media (min-width: 350px) {
+  .reviews {
+    h1 {
+      color: #ffff;
+      font-size: 5rem;
+    }
+    .reviewsContainer {
+      margin-inline: 1em;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      text-align: center;
+      gap: 2em;
+
+      .reviewsCard {
+        background-color: rgba(33, 37, 41, 0.85);
+        border-radius: 2rem 0 2rem 0;
+        padding: 0.5em;
+        border: 1px solid grey;
+
+        h2 {
+          color: #ff214f;
+        }
+        p {
+          color: #ffff;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

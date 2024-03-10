@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slider {
+  width: 20rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.imagesSlider {
+  display: flex;
+  align-items: center;
+}
+
+.imagesSlider img {
+  transition: all 300ms ease-in-out;
+}
+
+.right,
+.left {
+  all: unset;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50%;
+  transition: background-color 300ms ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.right {
+  border-radius: 2rem 0 0 2rem;
+}
+.left {
+  border-radius: 0 2rem 2rem 0;
+}
+
+.right:hover,
+.left:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 2rem 2rem 0;
+}
+
+.right:hover {
+  border-radius: 2rem 0 0 2rem;
+}
+
+.right {
+  right: 0;
+}
+
+.right > *,
+.left > * {
+  stroke: #ffff;
+  fill: black;
+  width: 2rem;
+  height: 1.8rem;
+}
+
+.right:hover > *,
+.left:hover > * {
+  animation: squish 200ms ease-in-out;
+}
+
+@keyframes squish {
+  50% {
+    scale: 1.4 0.6;
+  }
+}
+
+.dot {
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.btn-dot {
+  all: unset;
+  width: 1rem;
+  cursor: pointer;
+}
+
+.btn-dot:not(:last-child) {
+  margin-right: 0.2em;
+}
+
+.btn-dot:hover,
+.btn-dot:focus-visible {
+  transition: scale 100ms ease-in-out;
+  scale: 1.2;
+}
+
+.btn-dot > * {
+  stroke: #ffff;
+  fill: black;
+  width: 100%;
+  height: 100%;
+}

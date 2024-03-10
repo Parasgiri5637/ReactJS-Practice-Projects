@@ -1,0 +1,24 @@
+#root {
+  max-width: 1280px;
+  padding: 1rem;
+}  
+
+.cart-Icon{
+  display: grid;
+  place-items: end;
+  position: relative;
+  img{
+    height: auto;
+    max-width: 100%;
+    width: 2rem;
+  }
+  span{
+    position: absolute;
+    top: -8px;
+    background-color: rgb(204, 214, 214);
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    right: 1px;
+    padding: 0 5px;
+  }
+}

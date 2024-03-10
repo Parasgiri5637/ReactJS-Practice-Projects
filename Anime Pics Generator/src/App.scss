@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  font-family: "Courier New", Courier, monospace;
+}
+
+img {
+  width: 100%;
+}
+.container {
+  background-color: rgb(91, 91, 91);
+  padding: 3em 5em;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgb(91, 91, 91, 0.5);
+  position: relative;
+  text-align: center;
+  .heading {
+    margin-bottom: 0.8em;
+    color: #fff;
+    font-size: 2.5rem;
+  }
+  .btn {
+    margin-bottom: 0.8em;
+    background-color: rgb(2, 64, 136);
+    border: 2px solid #fff;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    &:disabled {
+      background-color: rgb(66, 113, 164);
+      cursor: not-allowed;
+    }
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+  .anime_container {
+    img {
+      margin-bottom: 0.8em;
+      border-radius: 50%;
+      border: #fff;
+      height: 30rem;
+      width: 30rem;
+      border: 2px solid #fff;
+    }
+    h3 {
+      background-color: rgb(2, 64, 136);
+      font-size: 1.7rem;
+      font-weight: 500;
+      padding: 0.3em;
+      border-radius: 1rem;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+}
+
+.back {
+  background-color: rgb(2, 64, 136);
+  position: absolute;
+  border: 1px solid #fff;
+  padding: 0.5em;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #fff;
+  top: 1rem;
+  left: 0.5rem;
+  cursor: pointer;
+}

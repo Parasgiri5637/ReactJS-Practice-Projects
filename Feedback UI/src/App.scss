@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; //* 10px
+}
+
+img {
+  max-width: 100%;
+}
+
+//* Variables
+$bg-Color: lightcyan;
+$imageColor: darkseagreen;
+$container-bg-color: rgba(255, 255, 255, 0.3);
+$image-Width: 4.5rem;
+$btn-color: darkcyan;
+$btn-text-color: aliceblue;
+$default-text-color: green;
+//*Fonts
+$heading: 3rem;
+
+body {
+  background-color: $bg-Color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  font-family: monospace;
+  color: $default-text-color;
+}
+
+.container {
+  text-align: center;
+  background-color: $container-bg-color;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  padding: 5em 10em;
+  position: relative;
+  border-radius: 2rem;
+  .heading {
+    font-size: $heading;
+  }
+
+  .rating-container {
+    display: flex;
+    gap: 10em;
+    margin-block: 3em;
+  }
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 1.5em;
+
+    &:hover,
+    &.active {
+      transition: all 0.3s ease-in;
+      color: $btn-text-color;
+      border-radius: 0.4rem;
+      background-color: $imageColor;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    }
+
+    img {
+      width: $image-Width;
+      margin-bottom: 0.5em;
+    }
+    span {
+      font-size: 1.5rem;
+    }
+  }
+  .btn {
+    background-color: $btn-color;
+    color: $btn-text-color;
+    padding: 1em 3em;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+
+    &:hover {
+      transition: all 0.3s ease-in;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    }
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+}
+
+.back {
+  background-color: $btn-color;
+  color: $btn-text-color;
+  padding: 0.4em;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+
+  &:hover {
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+.totalFeedBack {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}

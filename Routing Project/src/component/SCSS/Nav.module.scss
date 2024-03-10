@@ -1,0 +1,151 @@
+@media (min-width: 350px) and (max-width: 960px) {
+  .logo {
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  .logo2 {
+    display: none;
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+  .nav.activeNav {
+    background-color: rgba(33, 37, 41, 0.85);
+    border-bottom: 1px solid #fff;
+  }
+
+  .menuLink {
+    position: absolute;
+    text-align: center;
+    top: 100.5%;
+
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.85);
+    transition: all 500ms ease-in-out;
+    z-index: 0;
+
+    ul li {
+      list-style: none;
+      letter-spacing: 1px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-block: 1.5em;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+
+  .menuLink.activeTop {
+    top: -50rem;
+  }
+  .logo {
+    z-index: 1;
+
+    img {
+      width: 8rem;
+      height: 8rem;
+      margin: 1.5em 0 1.5em 1em;
+    }
+  }
+  .menu {
+    color: #fff;
+    cursor: pointer;
+    margin: 1.5em 0 2em 0;
+    z-index: 1;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-right: 0.5em;
+  }
+  .cart2 {
+    display: none;
+  }
+}
+
+.cart,
+.cart2 {
+  position: relative;
+  margin-right: 0.5em;
+
+  .cartCount {
+    position: absolute;
+    top: -5px;
+    color: #fff;
+  }
+}
+
+@media (min-width: 960px) {
+  .nav {
+    position: sticky;
+    top: 0;
+  }
+  .nav.activeNav {
+    background-color: rgba(33, 37, 41, 0.85);
+    border-bottom: 1px solid #fff;
+    transition: all 0.3s ease;
+  }
+  .menu,
+  .cart {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  .logo2 {
+    // background-color: aqua;
+    width: 100%;
+    text-align: center;
+
+    img {
+      width: 10rem;
+      height: 10rem;
+      flex: 1;
+    }
+  }
+
+  .menuLink {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    margin-inline: 3em;
+    gap: 3em;
+    width: 100%;
+    // border: 1px solid red;
+
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+  }
+}

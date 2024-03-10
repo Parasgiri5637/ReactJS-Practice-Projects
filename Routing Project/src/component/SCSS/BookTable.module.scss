@@ -1,0 +1,72 @@
+.bookTable {
+  margin-top: -2.9rem;
+  background-image: url("/public/book-table-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+
+  .overbookTable {
+    height: 77vh;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.6);
+    text-align: center;
+  }
+}
+
+.tableText {
+  color: #fff;
+  letter-spacing: 1px;
+  padding-top: 2em;
+}
+.tableInput {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  margin-inline: 1em;
+}
+input {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.9em 1.8em;
+  outline: none;
+
+  &:focus {
+    transition: all 0.3s ease-in;
+    border: 2px solid #ff214f;
+  }
+
+  &::placeholder {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+  }
+}
+.overbookTable button {
+  margin-top: 6em;
+  margin-bottom: 3em;
+  padding: 1em 1em;
+  font-size: 1.7rem;
+  background-color: #ff214f;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.96);
+    transition: all 0.4s ease-in;
+  }
+}
+
+@media (min-width: 350px) {
+  .tableInput {
+    gap: 0.8em;
+  }
+}
+@media (min-width: 844px) {
+  .tableInput {
+    gap: 2em;
+  }
+}

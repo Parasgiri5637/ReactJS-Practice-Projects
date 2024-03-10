@@ -1,0 +1,56 @@
+.contactUs {
+  h1 {
+    color: #fff;
+  }
+  .map {
+    margin-inline: 1em;
+    iframe {
+      width: 100%; /* Set the width to 800 pixels */
+      height: 450px; /* Set the height to 600 pixels */
+    }
+  }
+  .formTag {
+    padding-block: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      input {
+        width: 35rem;
+      }
+      button {
+        background-color: #ff214f;
+        color: #fff;
+        padding: 0.7em 1em;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+      textarea {
+        background-color: transparent;
+        outline: none;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 0.5em 0.8em;
+        resize: none;
+
+        &::placeholder {
+          color: #fff;
+          font-size: 1.5rem;
+        }
+
+        &:focus {
+          border: 2px solid #ff214f;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}

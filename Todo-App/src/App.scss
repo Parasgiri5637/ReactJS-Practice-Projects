@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+$bg-color: #857bac;
+$border-color: #6d5dad;
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Set the width of the scrollbar */
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-color;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #ffff;
+}
+
+.todoApp {
+  // background-color: aliceblue;
+  overflow-y: scroll;
+  height: 40rem;
+  // width: 44rem;
+}
+//* ============== Form
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+  gap: 0.5em;
+
+  input {
+    padding: 0.6em 9em 0.5em 0.5em;
+    outline: none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+  }
+  button {
+    padding: 0.7em 1.7em;
+    border: none;
+    outline: none;
+    background-color: #3e2b8a;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+
+    &:active {
+      transform: scale(0.96);
+      transition: all 0.3 ease-in;
+    }
+  }
+}
+
+//* ====================== TaskList
+.taskList {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 1em;
+
+  input {
+    padding: 0.6em 7em 0.5em 0.5em;
+    outline: none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    background-color: #13283b;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    color: #ffff;
+  }
+  button {
+    padding: 0.6em 1.3em;
+
+    border: none;
+    outline: none;
+    background-color: #3e2b8a;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+
+    &:active {
+      transform: scale(0.96);
+      transition: all 0.3 ease-in;
+    }
+  }
+}
+
+//* Edit Form
+.edit-form {
+  margin-top: 0;
+
+  input {
+    padding: 0.6em 9em 0.5em 0.5em;
+  }
+  button {
+    padding: 0.7em 1em;
+  }
+}
